@@ -1,5 +1,6 @@
 window.onload = function() {
-    document.querySelector("button").addEventListener('click', genereerUitkomst);
+    
+    for(radioButton of document.querySelectorAll("input[type = radio]")) radioButton.addEventListener('click', genereerUitkomst);
 
     function genereerUitkomst(e) {
         // genereer HTML-output

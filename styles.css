@@ -33,21 +33,8 @@ section {
     margin: 1em;
 }
 
-#grafiek {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#grafiek button {
-    font-size: 1.5em;
-    color: #e0007a;
-    border: 1px solid white;
-    border-radius: 5px;
-}
-
 #grafiek #uitkomst {
+    font-size: 1.5em;
     margin: 1em;
 }
 

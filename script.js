@@ -1,8 +1,8 @@
 window.onload = function() {
     
-    for(radioButton of document.querySelectorAll("input[type = radio]")) radioButton.addEventListener('click', genereerUitkomst);
+    for(radioButton of document.querySelectorAll("input[type = radio]")) radioButton.addEventListener('click', genereerUitkomstVisueel);
 
-    function genereerUitkomst(e) {
+    function genereerUitkomstTekst(e) {
         // genereer HTML-output
         let output = "";
 
@@ -22,8 +22,20 @@ window.onload = function() {
         target.innerHTML = output;
     }
 
+    function genereerUitkomstVisueel(e) {
 
-    // eem functie om de waardes van de geselecteerde radio-buttons bij elkaar op te tellen
+        // HTML-element waar de resultaten in getoond worden
+        const target = document.querySelector("#uitkomst");
+
+        // tel de scores op
+        scores = somSecties(1, 3);  // update de globale variabele (p5sketch.js)
+    }
+
+
+    /* Hulpfuncties */
+
+
+    // een functie om de waardes van de geselecteerde radio-buttons bij elkaar op te tellen
     function somSecties(startIndex, eindIndex) {
         
         let results = [];   // format: [ totaal, sectie 1, sectie 2, sectie N, ... ]

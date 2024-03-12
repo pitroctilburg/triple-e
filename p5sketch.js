@@ -2,9 +2,10 @@ let cw, ch;
 
 let scores = [0, 0, 0, 0];
 let ctx;
+let canvasElement;
 
 function setup() {
-    let canvasElement = document.querySelector("canvas");
+    canvasElement = document.querySelector("canvas");
     cw = canvasElement.clientWidth;
     ch = canvasElement.clientHeight;
     createCanvas(cw, ch, canvasElement);
